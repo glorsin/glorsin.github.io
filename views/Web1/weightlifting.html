@@ -1,0 +1,108 @@
+<!-- 
+    Lori Sinclair
+    12/2/2019
+    ITSE 1311 Semester Project
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sinclair</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  
+    <!-- Header -->
+    <header>
+        <h1>Dr. Roy Sinclair</h1>
+        <!-- <p>1929 to 2015</p> -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="./index.html" title="Back to Home page" >HOME</a>
+        <a href="./academics.html" title="UofA and MIT" >Academics</a>
+        <a href="./weightlifting.html" title="IWF">Weightlifting</a>
+        <a href="./recognition.html" title="Awards">Recognition</a>
+        <a href="./personal.html" title="Life">Personal</a>
+        <a class="navExternal" href="https://en.wikipedia.org/wiki/Sinclair_Coefficients" title="External" target="_blank">Sinclair Coefficients</a>
+        <a class="navExternal" href="https://www.iwf.net/2015/03/23/dr-roy-sinclair-father-of-the-sinclair-bodyweight-formula-passed-away/" title="External" target="_blank">IWF</a>
+        <a class="navExternal" href="http://www.edmontonjournal.com/opinion/Life+Times+Academically+driven+weightlifter+maintained/11002503/story.html" title="External" target="_blank">Newspaper</a>
+    </nav>
+
+    <!-- The flexible grid (content) -->
+    <div class="container">
+        <main>
+            <h2>Weightlifting</h2>
+            <p>Dad had a great respect for exercise and helped mold me with the same attitude.</p>
+            <ul>
+                <li>Dad was first introduced to weightlifting by his own father, who served in WW1 as Lieutenant in the Royal Tanks Corp.</li>
+                <li>That interest grew into a passion that intersected with mathematics in his most significant contribution to weightlifting, the "Sinclair Bodyweight Formula".</li>
+                <li>In the Olympics and other weightlifting competitions, athletes compete against others within their own bodyweight category. Whereas, the Sinclair Total is a formula to compare athlete to athlete at any bodyweight.</li>
+                <li>The Sinclair Formula answered the question: “What would an athlete weighing x kg and lifting y kg, lift if they were a superheavyweight lifter of the same ability?”</li>
+                <li>His Formula was adopted by the International Weightlifting Federation in 1979 and used world-wide.</li>
+                <li>In competitions athletes attempt to lift the maximum weight possible for them using 2 techniques: Snatch, and Clean & Jerk. The athlete is allowed 3 attempts each per technique. The combined weight of each technique is their Lifted weight total. The Snatch has the athlete lift the barbell from the floor to overhead in a single explosive movement. Whereas, the Clean & Jerk combines 2 motions: starting with lifting the barbell from the floor to shoulders, and following with jerking the weight to overhead. One can typically lift about 20% more using the Clean & Jerk. Medals are presented for both lifts and their total.</li>
+                <li>Below is a picture of Dad weightlifting - brains and brawn!</li>
+                <img class="imageNormal" src="./media/Dad_Lifting2.jpg" alt="Lifting">
+                <li>He had been involved with the Alberta Provincial Weightlifting Federation for over 50 years, officiated at the first competition in 1958, and had served as president.</li>
+                <li>He also was recruited to the Canadian Weightlifting Federation Officials committee.</li>
+                <li>He was the first Canadian to become an International Weightlifting Federation #3 official, and the first to reach #1 official certification which qualified him for Olympic judging.</li>
+            </ul>
+            <form action="https://sinclaircalculator.com/" target="_blank"  method="get">
+                <fieldset>
+                    <legend>Sinclair Calculator</legend>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label for="gFemale">Female</label>
+                        <input type="radio" name="gender" id="gFemale" value="female"><br>
+                        <label for="gMale">Male</label>
+                        <input type="radio" name="gender" id="gMale" value="male" checked><br>
+                    </fieldset>
+                    <br>
+                    <label for="kgBodyWeight">Bodyweight (kg)</label>
+                    <input type="number" id="kgBodyWeight" placeholder="kg" min="0" required>
+                    <br>
+                    <label for="kgLifted">Lifted weight (kg)</label>
+                    <input type="number" id="kgLifted" placeholder="kg" min="0" required>
+                    <br><br>
+                    <button type="submit">
+                            Calculate
+                    </button>  
+                </fieldset>
+            </form>
+            <br>
+            <p>Mattie Rogers lifting using Clean & Jerk technique, courtesy of YouTube.</p>
+            <video controls width="400" autoplay loop muted>
+                <source src="./media/MattieRogers.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <br>
+            <a href="https://www.youtube.com/watch?v=VgTK1e7y_Js" target="_blank">Full YouTube Video</a>
+        </main>
+        <aside>
+            <h2>Highlights</h2>
+            <h3>PhD in Mathematics, MIT 1961</h3>
+            <img class="imageSmall" src="./media/1960.JPG" alt="1960 Grad">
+
+            <h3>Mathematics Professor, University of Alberta 1961-89</h3>
+            <img class="imageSmall" src="./media/1962a.jpg" alt="1962 UofA Professor">
+
+            <h3>Alberta Sports Hall of Fame, 2011</h3>
+            <img class="imageSmall" src="./media/2011g.JPG" alt="Sports Hall">
+            <img class="imageSmall" src="./media/2011h.JPG" alt="Sports Hall with plaque">
+
+            <h3>International Weightlifting Federation Hall of Fame, 2017</h3>
+            <img class="imageSmall" src="./media/Awarding2.jpg" alt="IWF Hall of Fame">
+        </aside>
+    </div>
+
+    <footer>
+        <p>Website created by Lori Sinclair</p>
+        <p>Last updated 12/2/2019</p>
+    </footer>
+  
+</body>
+</html>

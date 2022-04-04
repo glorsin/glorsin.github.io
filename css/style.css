@@ -61,9 +61,10 @@
     margin-bottom: .25em;
     /* background: #000; */
     background: radial-gradient(black, var(--med-blue));
+    border-radius: 0.5em;
   }
   #accordion h3 a {
-    padding: 10px;
+    padding: 0.5em;
     display: block;
     color: #FFF;
   }
@@ -72,21 +73,25 @@
    * Links
    */
   a:link {
-    color: #1476b8;
-    font-weight: bold;
+    color: var(--dark-blue);
+    /* font-weight: bold; */
     text-decoration: none;
   }
   a:visited {
     color: #1430b8;
   }
   a:hover {
-    text-decoration: underline overline red;
+    text-decoration: underline overline white;
     text-decoration-style: double;
-    font-style: italic;
-    color: red;
+    /* font-style: italic; */
+    color: white;
   }
   a:active {
     color: #b81414;
+  }
+
+  a.breadcrumb {
+    text-decoration: underline overline white;
   }
 
   /*
@@ -136,7 +141,8 @@
     text-align: center;
     background-image: radial-gradient(black, var(--med-blue));
     color: #fff;
-    text-shadow: 0.1em 0.1em 0.3em #000;
+    /* text-shadow: 0.1em 0.1em 0.3em #000; */
+    text-shadow: 1px 1px 3px blue;
   }
 
   @media (min-width: 35em) {
@@ -187,11 +193,16 @@ figcaption {
     }
   }
 
+  li {
+    padding-bottom: 0.5em;
+  }
+
   .subtitle {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px blue;
   }
 
   /*
@@ -289,7 +300,7 @@ figcaption {
     }
 
     .nav-menu > li > a {
-      padding: 0.3em;
+      padding: 0.4em;
       text-align: center;
     }
   }
@@ -308,14 +319,23 @@ figcaption {
      display: flex;
      margin-left: -.75em;
      margin-right: -.75em;
+     padding-top: 1em;
     }
 
     .column {
       flex: 1;
-
       background-color: var(--light-blue);
       padding: 0.2em;
       padding-left: 1em;
+      border-radius: 0.5em;
+      margin: 0.4em;
+    }
+
+    .column_accordian {
+      /* flex: 1; */
+      background-color: var(--light-blue);
+      padding: 0.1em 1em;
+      /* padding-left: 1em; */
       border-radius: 0.5em;
       margin: 0.4em;
     }
