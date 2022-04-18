@@ -27,7 +27,8 @@
   body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: var(--headshot);
+    background-color: var(--light-blue);
+    background-image: linear-gradient(var(--headshot) 30%, var(--light-blue) 80%, var(--light-blue) 100%);
   }
   
   h1 {
@@ -75,6 +76,7 @@
   
   #plain {
     background-color: white;
+    background-image: linear-gradient(white, white);
   }
 
   /*
@@ -328,8 +330,9 @@ figcaption {
 
   /* FOOTER */
   footer {
-      background-color: lightgray;
+      background-color: var(--light-blue);
       padding: 0.2rem;
       text-align: center;
       font-size: 0.8em;
+      font-style: italic;
   }
