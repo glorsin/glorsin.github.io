@@ -4,9 +4,12 @@
     --light-gray: #F9FFFF;
      /* Colors from https://color.adobe.com/create Monochromatic */
     --med-blue: #1D69CC;
-    --light-blue: #a6c1e6;
+    /* --light-blue: #a6c1e6; */
+    --light-blue: #BECAD8;
     --dark-blue: #124180;
     --dark-gray: #797F87;
+    /* --headshot: #CBC3AE; */
+    --headshot: #CBBFA7;
   }
 
   @media (min-width: 50em) {
@@ -24,8 +27,9 @@
   body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--headshot);
   }
-
+  
   h1 {
     margin-left: 20%;
     color: var(--med-blue);
@@ -55,7 +59,7 @@
   }
 
   #accordion {
-    width: 500px;
+    width: 470px;
   }
   #accordion h3 {
     margin-bottom: .25em;
@@ -69,6 +73,10 @@
     color: #FFF;
   }
   
+  #plain {
+    background-color: white;
+  }
+
   /*
    * Links
    */
@@ -133,30 +141,6 @@
     margin: 0;
   }
 
-  /*
-   * Hero image
-   */
-  .hero {
-    padding: 2em 1em;
-    text-align: center;
-    background-image: radial-gradient(black, var(--med-blue));
-    color: #fff;
-    /* text-shadow: 0.1em 0.1em 0.3em #000; */
-    text-shadow: 1px 1px 3px blue;
-  }
-
-  @media (min-width: 35em) {
-    .hero {
-      padding: 4em 2em;
-      font-size: 1.5rem;
-    }
-  }
-
-  @media (min-width: 50em) {
-    .hero {
-      padding: 5em 3em;
-    }
-  }
 
   figure {
     display: inline-block;
@@ -202,7 +186,8 @@ figcaption {
     margin-bottom: 1.5em;
     font-size: 1.2rem;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px blue;
+    /* text-shadow: 1px 1px 1px blue; */
+    text-shadow: 1px 1px 1px var(--med-blue);
   }
 
   /*
