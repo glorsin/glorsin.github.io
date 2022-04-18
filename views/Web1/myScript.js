@@ -6,7 +6,7 @@ var sinclairPic = true;
 var timer = setInterval(switchImage, 5000);
 function switchImage() {
     if (sinclairPic) {
-        document.getElementById("showPicture").src = "./media/1960.jpg";
+        document.getElementById("showPicture").src = "./media/1960.JPG";
         sinclairPic = false;
     } else {
         document.getElementById("showPicture").src = "./media/2011g.jpg";
