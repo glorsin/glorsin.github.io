@@ -24,13 +24,21 @@
     box-sizing: inherit;
   }
 
+
   body {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--light-blue);
     background-image: linear-gradient(var(--headshot) 30%, var(--light-blue) 80%, var(--light-blue) 100%);
+    /* background-image: url("../media/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg");
+    background-size: cover;  */
   }
-  
+  @media (min-width: 35em) {
+    body {
+      background-image: url("../media/vishnu-mohanan-pfR18JNEMv8-unsplash.jpg");
+      background-size: cover; 
+    }
+  }
   h1 {
     margin-left: 20%;
     color: var(--med-blue);
@@ -76,7 +84,9 @@
   
   #plain {
     background-color: white;
-    background-image: linear-gradient(white, white);
+    /* background-image: linear-gradient(white, white); */
+    background-image: url("../media/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-size: cover; 
   }
 
   /*
@@ -152,6 +162,7 @@
 img {
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
 }
 figcaption {
     padding: 0.3em 0.8em;
@@ -330,7 +341,7 @@ figcaption {
 
   /* FOOTER */
   footer {
-      background-color: var(--light-blue);
+      background-color: var(--headshot);
       padding: 0.2rem;
       text-align: center;
       font-size: 0.8em;
